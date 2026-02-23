@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Graduate:regular);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #26283c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #3c3e5d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+
+.container h1 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.container #text {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  color: gainsboro;
+}
+
+.container #guess-input {
+  text-align: center;
+  font-size: 5rem;
+  font-family: Graduate;
+  width: 5ch;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  margin: 20px 0 30px 0;
+  border: none;
+}
+
+.container #guess-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  background-color: hsl(236, 22%, 40%);
+  color: white;
+  font-weight: bold;
+
+  font-size: 2.5rem;
+  padding: 1rem 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    font-size: 1.2rem;
+  }
+
+  .container #text {
+    font-size: 1rem;
+  }
+
+  .container #guess-input {
+    width: 4ch;
+    font-size: 4rem;
+    margin: 10px 0 20px 0;
+  }
+
+  .container #guess-btn {
+    font-size: 2rem;
+  }
+}
