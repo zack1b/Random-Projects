@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Tumbler;
+  src: url(Lost\ Tumbler.ttf);
+}
+
+* {
+  user-select: none;
+  font-family: Tumbler;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #26283c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+p,
+#money-display {
+  font-family: Tumbler;
+  color: #fff;
+  font-size: 4rem;
+}
+
+#mpc-btn {
+  margin-top: 1rem;
+  font-family: Tumbler;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #e86a73;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#mpc-display {
+  font-family: Tumbler;
+}
+#mpc-lvl-display {
+  font-family: Tumbler;
+}
+#mpc-nprice {
+  font-family: Tumbler;
+}
+
+.upgrades button {
+  margin-top: 1rem;
+  font-family: Tumbler;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #f9a31b;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
