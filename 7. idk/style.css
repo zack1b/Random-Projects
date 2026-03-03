@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Tumbler;
+  src: url(/z.\ fonts/Lost\ Tumbler.ttf);
+}
+
+* {
+  font-family: Tumbler;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#settings-menu {
+  display: none;
+  position: absolute;
+  border: #171022 solid 0.5rem;
+  border-radius: 2rem;
+  background-color: #271d36;
+  width: 90%;
+  height: 90%;
+
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+
+  z-index: 3;
+}
+
+#settings-menu #close-menu {
+  cursor: pointer;
+  color: white;
+  background-color: #382a4d;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 #171022;
+}
+
+#alert-btn {
+  margin-bottom: 25px;
+  user-select: none;
+  box-shadow: 0 15px 0 red;
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+  font-size: 2rem;
+  width: 300px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+#alert-btn:active {
+  transform: translateY(15px);
+  box-shadow: 0 0 0 red;
+}
+
+#settings-btn {
+  margin-bottom: 25px;
+  user-select: none;
+  box-shadow: 0 15px 0 #171022;
+  cursor: pointer;
+  background-color: #382a4d;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+  font-size: 2rem;
+  width: 300px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+#settings-btn:active {
+  transform: translateY(15px);
+  box-shadow: 0 0 0 #171022;
+}
+
+#color-display {
+  margin-bottom: 1rem;
+  user-select: text;
+  background-color: #725e8f;
+  border: solid #fff 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
+
+  /*padding: 1rem;*/
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.r {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
