@@ -1,0 +1,133 @@
+:root {
+  --card-color: hsl(263, 43%, 20%);
+  --card-outline-color: hsl(262, 34%, 25%);
+  --bg-color: hsl(263, 43%, 15%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6faff;
+  /*background-color: #efefef;*/
+  gap: 1rem;
+}
+/* contaainer 1 */
+.container1 {
+  background-color: #fcfbfc;
+  padding: 25px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.3rem;
+}
+
+.top {
+  padding: 1rem 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  background: #edf3f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.top::after {
+  content: "%";
+}
+
+.bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.text-content .top-text {
+  font-weight: bold;
+}
+.text-content .bottom-text {
+  color: #878787;
+}
+
+.container1 button {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: #f8e6e5;
+  border: 1px solid #e8e0e1;
+  border-radius: 1rem;
+  color: #9c383f;
+}
+/* container 2 */
+
+.container2 {
+  padding: 1rem;
+  background-color: #fcfbfc;
+  border-left: solid 4px rgb(246, 31, 31);
+  width: 400px;
+  height: fit-content;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 {
+  user-select: none;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: bold;
+}
+.box1 .dot {
+  background-color: rgb(246, 31, 31);
+  height: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.box1 a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #8899a7;
+}
+
+.box2 {
+  margin-bottom: 10px;
+}
+
+.box3 {
+  color: #8899a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box3 a {
+  text-decoration: none;
+  color: #8899a7;
+}
